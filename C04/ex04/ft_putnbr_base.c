@@ -20,8 +20,6 @@ int	base_valid(char *base)
 	size = 0;
 	while (base[size])
 	{
-		if (base[size] < 32 || base[size] == 127)
-			return (0);
 		if (base[size] == '+' || base[size] == '-')
 			return (0);
 		index = size + 1;
